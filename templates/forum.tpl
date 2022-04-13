@@ -15,11 +15,14 @@ var disqus_config = function () {ldelim}
 	this.page.identifier = {$submissionId|json_encode};
 {rdelim};
 
+
 (function() {ldelim}
-	var d = document, s = d.createElement('script');
-	s.src = '//{$disqusForumName|escape}.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
+	if (window.confirm("Do you really want to use disqus?")) {
+  		var d = document, s = d.createElement('script');
+		s.src = '//{$disqusForumName|escape}.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	}
 {rdelim})();
 
 </script>
