@@ -25,3 +25,15 @@ msgstr "Disqus forum's shortname"
 
 msgid "plugins.generic.disqus.manager.settings.disqusForumNameRequired"
 msgstr "Disqus forum's shortname is required"
+
+msgid "plugins.generic.disqus.manager.settings.descriptionPrivacy"
+msgstr "To comply to the GDPR activate this option."
+
+msgid "plugins.generic.disqus.manager.settings.disqusForumPrivacy"
+msgstr "user consent needed"
+
+msgid "plugins.generic.disqus.manager.settings.disqusForumPrivacyInfo"
+msgstr "Please enter some text to inform your users about the privacy issues at stake when they activate the disqus widget."
+
+
+
