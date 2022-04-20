@@ -25,3 +25,18 @@ msgstr "Kurzname des Disqus-Forums"
 
 msgid "plugins.generic.disqus.manager.settings.disqusForumNameRequired"
 msgstr "Kurzname des Disqus-Forums ist erforderlich"
+
+msgid "plugins.generic.disqus.manager.settings.descriptionPrivacy"
+msgstr "GDPR Konformität sicherstellen"
+
+msgid "plugins.generic.disqus.manager.settings.disqusForumPrivacy"
+msgstr "Nutzer Zustimmung erforderlich"
+
+msgid "plugins.generic.disqus.manager.settings.disqusForumPrivacyInfo"
+msgstr "Bitte geben Sie einen geeigneten Text ein, um Ihre Nutzer auf die Datenschutz Problematik hinzuweisen."
+
+msgid "plugins.generic.disqus.button.consent"
+msgstr "Ja, ich möchte an der Diskussion teilnehmen!"
+
+msgid "plugins.generic.disqus.button.block"
+msgstr "Kein Disqus bitte, Ich möchte nur den Artikel lesen."

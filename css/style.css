@@ -1,0 +1,22 @@
+button.disqus {
+    width: 100%;
+    height: 3em;
+    border-radius: 5px;
+    color: #fff;
+}
+
+button.disqus.activate {
+    background-color: #006798;
+}
+
+button.disqus.deactivate {
+    background-color: #f05f70;
+}
+
+#disqus_privacy {
+    margin: 1em;
+    padding: 1em;
+    background-color: #999;
+    border-radius: 5px;
+    color: #fff;
+}

@@ -35,5 +35,9 @@ msgstr "user consent needed"
 msgid "plugins.generic.disqus.manager.settings.disqusForumPrivacyInfo"
 msgstr "Please enter some text to inform your users about the privacy issues at stake when they activate the disqus widget."
 
+msgid "plugins.generic.disqus.button.consent"
+msgstr "Yes, I want to join the discussion!"
 
+msgid "plugins.generic.disqus.button.block"
+msgstr "No disqus please, I only want to read the article."
 

@@ -37,6 +37,11 @@ class DisqusPlugin extends GenericPlugin {
 			HookRegistry::register('Templates::Catalog::Book::Footer::PageFooter', array($this, 'addDisqus'));
 
 		}
+
+		$url = $request->getBaseUrl() . '/' . $this->getPluginPath() . '/css/style.css';
+		$templateMgr = TemplateManager::getManager($request);
+		$templateMgr->addStyleSheet('disqusStyles', $url);
+
 		return $success;
 	}
 
