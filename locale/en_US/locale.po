@@ -32,12 +32,12 @@ msgstr "To comply to the GDPR activate this option."
 msgid "plugins.generic.disqus.manager.settings.disqusForumPrivacy"
 msgstr "user consent needed"
 
-msgid "plugins.generic.disqus.manager.settings.disqusForumPrivacyInfo"
-msgstr "Please enter some text to inform your users about the privacy issues at stake when they activate the disqus widget."
-
 msgid "plugins.generic.disqus.button.consent"
 msgstr "Yes, I want to join the discussion!"
 
 msgid "plugins.generic.disqus.button.block"
 msgstr "No disqus please, I only want to read the article."
+
+msgid "plugins.generic.disqus.privacyInfo"
+msgstr "This site uses the Disqus service for comments and discussions. Disqus processes personal data. By activating the function you consent that your personal data are processed according to the <a href='https://help.disqus.com/en/articles/1717103-disqus-privacy-policy'>disqus privacy policy</a>.<br/>After activating Disqus you can restrict the use of the data collected by allowing Disqus to <a href='https://disqus.com/data-sharing-settings/'>set an op-out cookie</a>."
 

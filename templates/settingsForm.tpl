@@ -26,10 +26,9 @@
 	{/fbvFormArea}
 
 	<div id="descriptionPrivacy">{translate key="plugins.generic.disqus.manager.settings.descriptionPrivacy"}</div>
-	{fbvFormArea id="disqusSettingsFormAreaPrivacy"}
-		{fbvElement id="disqusGDPR" name="disqusGDPR" type="checkbox" value="1" checked=$disqusGDPR label="plugins.generic.disqus.manager.settings.disqusForumPrivacy" translate=true}
-		{fbvElement id="disqusPrivacyInfo" name="disqusPrivacyInfo" type="textarea" value=$disqusPrivacyInfo label="plugins.generic.disqus.manager.settings.disqusForumPrivacyInfo"}
-	{/fbvFormArea}
+	{fbvFormSection id="disqusSettingsFormAreaPrivacy" list=true}
+		{fbvElement id="disqusGDPR" name="disqusGDPR" type="checkbox" value="1" checked=$disqusGDPR label="plugins.generic.disqus.manager.settings.disqusForumPrivacy" translate=true class="checkbox_and_radiobutton"}
+	{/fbvFormSection}
 
 	{fbvFormButtons}
 

@@ -32,11 +32,11 @@ msgstr "GDPR Konformität sicherstellen"
 msgid "plugins.generic.disqus.manager.settings.disqusForumPrivacy"
 msgstr "Nutzer Zustimmung erforderlich"
 
-msgid "plugins.generic.disqus.manager.settings.disqusForumPrivacyInfo"
-msgstr "Bitte geben Sie einen geeigneten Text ein, um Ihre Nutzer auf die Datenschutz Problematik hinzuweisen."
-
 msgid "plugins.generic.disqus.button.consent"
 msgstr "Ja, ich möchte an der Diskussion teilnehmen!"
 
 msgid "plugins.generic.disqus.button.block"
 msgstr "Kein Disqus bitte, Ich möchte nur den Artikel lesen."
+
+msgid "plugins.generic.disqus.privacyInfo"
+msgstr "Diese Site verwendet Disqus für Kommentare und Diskussionen. Disqus verarbeitet und speichert dafür persönliche Daten. Durch aktivieren von Disqus stimmen Sie zu, dass Ihre Daten enstprechend den  <a href='https://help.disqus.com/en/articles/1717103-disqus-privacy-policy'>Disqus Datenschutz Bestimmungen</a> verarbeitet werden dürfen.<br/>Nach der Aktivierung können Sie die Verwendung Ihrer Daten einschränken indem Sie ein <a href='https://disqus.com/data-sharing-settings/'>op-out cookie setzen</a>."

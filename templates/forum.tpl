@@ -13,7 +13,7 @@
 		<button type="button" id="disqus_switch" class="disqus activate">{translate key="plugins.generic.disqus.button.consent"}</button>
 	</div>
 	<div id="disqus_privacy_info">
-		{$disqusPrivacyInfo}
+		{translate key="plugins.generic.disqus.privacyInfo"}
 	</div>
 </div>
 
@@ -43,11 +43,17 @@ function loadDisqus() {
 	}
 	/* set disqus status */	
 	disqusActive = true;			
-	/* hide privacy message */
-	disqusPrivacyInfo.style.display = "none";	
-	/* set button css */
-	disqusSwitch.className = "disqus deactivate";	
-	disqusSwitch.textContent = "{translate key="plugins.generic.disqus.button.block"}";	
+	if ("{$disqusGDPR}" != "") {
+		/* GDPR compliance selected */
+		/* hide privacy message */
+		disqusPrivacyInfo.style.display = "none";	
+		/* set button css */
+		disqusSwitch.className = "disqus deactivate";	
+		disqusSwitch.textContent = "{translate key="plugins.generic.disqus.button.block"}";	
+	} else {
+		/* hide GDPR block */
+		disqusPrivacy.style.display = "none";	
+	}
 }
 
 function unloadDisqus() {
@@ -72,8 +78,8 @@ function unloadDisqus() {
 	disqusSwitch.textContent = "{translate key="plugins.generic.disqus.button.consent"}";	
 }
 
-/* GDPR compliance selected */
 if ("{$disqusGDPR}" != "") {
+	/* GDPR compliance selected */
 	/* check cookie status */
 	if (document.cookie.split(';').some((item) => item.trim().startsWith('disqusConsent='))) {
 		const cookieValue = document.cookie

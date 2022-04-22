@@ -46,7 +46,6 @@ class DisqusSettingsForm extends Form {
 	function initData() {
 		$this->_data = array(
 			'disqusForumName' => $this->plugin->getSetting($this->contextId, 'disqusForumName'),
-			'disqusPrivacyInfo' => $this->plugin->getSetting($this->contextId, 'disqusPrivacyInfo'),
 			'disqusGDPR' => $this->plugin->getSetting($this->contextId, 'disqusGDPR'),
 		);
 		parent::initData();
@@ -56,7 +55,7 @@ class DisqusSettingsForm extends Form {
 	 * Assign form data to user-submitted data.
 	 */
 	function readInputData() {
-		$this->readUserVars(array('disqusForumName','disqusPrivacyInfo','disqusGDPR'));
+		$this->readUserVars(array('disqusForumName','disqusGDPR'));
 		parent::readInputData();
 	}
 
@@ -75,7 +74,6 @@ class DisqusSettingsForm extends Form {
 	 */
 	function execute(...$functionArgs) {
 		$this->plugin->updateSetting($this->contextId, 'disqusForumName', trim($this->getData('disqusForumName'), "\"\';"), 'string');
-		$this->plugin->updateSetting($this->contextId, 'disqusPrivacyInfo', trim($this->getData('disqusPrivacyInfo'), "\"\';"), 'string');
 		$this->plugin->updateSetting($this->contextId, 'disqusGDPR', $this->getData('disqusGDPR'), 'bool');
 
 	    // Tell the user that the save was successful.

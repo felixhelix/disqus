@@ -145,7 +145,6 @@ class DisqusPlugin extends GenericPlugin {
 		$request = $this->getRequest();
 		$context = $request->getContext();
 		$disqusForumName = $this->getSetting($context->getId(), 'disqusForumName');
-		$disqusPrivacyInfo = $this->getSetting($context->getId(), 'disqusPrivacyInfo');
 		$disqusGDPR = $this->getSetting($context->getId(), 'disqusGDPR');
 
 		if (empty($disqusForumName)) return false;
@@ -175,7 +174,6 @@ class DisqusPlugin extends GenericPlugin {
 		$templateMgr->assign('disqusForumName', $disqusForumName);
 		$templateMgr->assign('submissionId', $submissionId);
 		$templateMgr->assign('submissionUrl', $submissionUrl);
-		$templateMgr->assign('disqusPrivacyInfo', $disqusPrivacyInfo);
 		$templateMgr->assign('disqusGDPR', $disqusGDPR);
 
 		$output .= $templateMgr->fetch($this->getTemplateResource('forum.tpl'));
